@@ -8,7 +8,7 @@ module.exports = {
     DOMAIN_URL: "sandbox9c41f305e6c04852a25aa8d705b3a4c7.mailgun.org",
     MAIL_FROM: "admin@hitaxi.com",
     MAIL_SUBJECT: "Hi Taxi Team",
-    MAIL_TEXT: 'Testing some Mailgun awesomness!',
+    MAIL_TEXT: '아래를 클릭해서 인증완료',
     DB_NAME: 'hitaxi',
     DB_LOGGING: 'true',
     DB_USERNAME: 'yuhogyun',
@@ -17,7 +17,6 @@ module.exports = {
     SERVER_HOST_NAME: 'http://localhost:3000',
     // 'http://localhost:3000'
     // 'ec2-52-78-176-3.ap-northeast-2.compute.amazonaws.com'
-
-
+    SECRET: 'guswnfkdtjdgnsdlsmstkfkdgo'
 };
 
