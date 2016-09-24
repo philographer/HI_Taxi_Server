@@ -39,6 +39,7 @@ app.set('view engine', 'jade');
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+path.join(__dirname, 'public');
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -80,8 +81,19 @@ app.use(function(err, req, res, next) {
 
 module.exports = app;
 
-//console.log(module);
-
-//DB Init
 dbService.sync();
+
+
+dbService.insertData();
+
+
+/*
+var rFile = "./exholiday.json";
+console.log(rFile);
+jsonfile.readFile(rFile, function(err, obj){
+  jsonfile.spaces = 2;
+  console.log(obj);
+});
+*/
+//DB Init
 
