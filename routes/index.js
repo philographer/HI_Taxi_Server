@@ -7,14 +7,17 @@ var router = express.Router();
 var request = require('request');
 
 //Internal controller
-var UserController = require('../lib/controller/signupController');
+var signupController = require('../lib/controller/signupController');
+var verificationController = require('../lib/controller/verificationController');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-router.post('/signup', UserController.signUpUser);
+router.post('/signup', signupController.signUpUser);
+
+router.post('/verification', verificationController.emailVerification);
 
 
 
