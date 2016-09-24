@@ -84,16 +84,7 @@ module.exports = app;
 dbService.sync();
 
 
-dbService.insertData();
+//dbService.insertData();
 
 
-/*
-var rFile = "./exholiday.json";
-console.log(rFile);
-jsonfile.readFile(rFile, function(err, obj){
-  jsonfile.spaces = 2;
-  console.log(obj);
-});
-*/
-//DB Init
 
