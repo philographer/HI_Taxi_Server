@@ -17,7 +17,7 @@ router.get('/', function(req, res, next) {
 
 router.post('/signup', signupController.signUpUser);
 
-router.post('/verification', verificationController.emailVerification);
+router.get('/verification', verificationController.emailVerification);
 
 
 

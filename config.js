@@ -13,5 +13,11 @@ module.exports = {
     DB_LOGGING: 'true',
     DB_USERNAME: 'yuhogyun',
     DB_PASSWORD: 'gkdlxortl',
-    DB_HOST_NAME: 'hitaxi.ctabe3wb6pkc.ap-northeast-2.rds.amazonaws.com'
+    DB_HOST_NAME: 'hitaxi.ctabe3wb6pkc.ap-northeast-2.rds.amazonaws.com',
+    SERVER_HOST_NAME: 'http://localhost:3000',
+    // 'http://localhost:3000'
+    // 'ec2-52-78-176-3.ap-northeast-2.compute.amazonaws.com'
+
+
 };
+
