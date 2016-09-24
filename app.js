@@ -8,16 +8,18 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var pg = require('pg');
 var Sequelize = require('sequelize');
+var Config = require('./config');
 const DbService = require('./lib/service/dbService');
 const dbService = new DbService({
-  dbName: 'hitaxi',
-  dbLogging: 'true',
-  dbUsername: 'yuhogyun',
-  dbPassword: 'gkdlxortl',
-  hostName: 'hitaxi.ctabe3wb6pkc.ap-northeast-2.rds.amazonaws.com'
+  dbName: Config.DB_NAME,
+  dbLogging: Config.DB_LOGGING,
+  dbUsername: Config.DB_USERNAME,
+  dbPassword: Config.DB_PASSWORD,
+  hostName: Config.DB_HOST_NAME
 });
 var cors = require('cors');
 //console.log(dbService.getSequelize() == dbService);
+
 
 exports.dbService = dbService;
 
