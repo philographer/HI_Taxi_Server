@@ -21,6 +21,7 @@ router.post('/signup', signupController.signUpUser);
 router.post('/login',loginController.imeiLogin);
 router.get('/verification', verificationController.emailVerification);
 
+router.get('/station', roomController.checkStation);
 router.get('/room', roomController.showRoom);
 router.post('/room', roomController.createRoom);
 
