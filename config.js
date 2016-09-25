@@ -17,6 +17,7 @@ module.exports = {
     SERVER_HOST_NAME: 'http://localhost:3000',
     // 'http://localhost:3000'
     // 'http://ec2-52-78-176-3.ap-northeast-2.compute.amazonaws.com:3000'
-    SECRET: 'guswnfkdtjdgnsdlsmstkfkdgo'
+    SECRET: 'guswnfkdtjdgnsdlsmstkfkdgo',
+    T_API_KEY: '43849f41-efc6-4daa-a23b-d8d4cbdb41d9'
 };
 
